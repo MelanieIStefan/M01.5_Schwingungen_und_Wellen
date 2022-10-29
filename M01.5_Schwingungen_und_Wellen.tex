@@ -204,7 +204,7 @@ Beispiel: Fadenpendel
 
 
 \begin{center}
-\includegraphics[width=0.5\textwidth]{/home/melanie/Work/pictures/physics/kind_schaukel.png}
+\includegraphics[width=0.5\textwidth]{kind_schaukel.png}
 \end{center}
 
 
@@ -223,10 +223,10 @@ Beispiel: Fadenpendel
 \frametitle{Schwingungen können als Zeitreihe gezeichnet werden}
 
 \begin{center}
-\includegraphics<1>[width=0.2\textwidth]{/home/melanie/Work/pictures/physics/schaukel_sinus_1.png}
-\includegraphics<2>[width=0.2\textwidth]{/home/melanie/Work/pictures/physics/schaukel_sinus_2.png}
-\includegraphics<3>[width=0.2\textwidth]{/home/melanie/Work/pictures/physics/schaukel_sinus_3.png}
-\includegraphics<4>[width=0.2\textwidth]{/home/melanie/Work/pictures/physics/schaukel_sinus_4.png}
+\includegraphics<1>[width=0.2\textwidth]{schaukel_sinus_1.png}
+\includegraphics<2>[width=0.2\textwidth]{schaukel_sinus_2.png}
+\includegraphics<3>[width=0.2\textwidth]{schaukel_sinus_3.png}
+\includegraphics<4>[width=0.2\textwidth]{schaukel_sinus_4.png}
 \end{center}
 
 \end{frame}
@@ -239,7 +239,7 @@ Beispiel: Fadenpendel
 
 \begin{center}
 
-\includegraphics[width=\textwidth]{/home/melanie/Work/pictures/physics/schwingungen_groessen.png}
+\includegraphics[width=\textwidth]{schwingungen_groessen.png}
 \end{center}
 
 \pause
@@ -256,7 +256,29 @@ s(t) = s_0\sin\frac{2\pi t}{T} \pause =  s_0\sin 2\pi\nu t = s_0 \sin \omega t
 
 %% Gedämpfte Schwingungen
 \begin{frame}
-\makebox[\linewidth]{\includegraphics[page=7,width=\textwidth]{Walter_Wellen.pdf}}
+\frametitle{Gedämpfte harmonische Schwingungen}
+
+
+\begin{columns}[c]
+
+\begin{column}{5cm}
+\begin{center}
+    \includegraphics[width=\textwidth]{Damped_sinewave.svg.png}
+\end{center}
+\end{column}
+
+\begin{column}{5cm}
+Das Pendel schwingt aufgrund der Reibung aus. 
+
+
+\[
+s(t) =  s_0 \sin (\omega t) \textcolor{red}{e^{-\delta t}}
+\]
+\end{column}
+
+
+\end{columns}
+
 \end{frame}
 
 
@@ -271,7 +293,7 @@ s(t) = s_0\sin\frac{2\pi t}{T} \pause =  s_0\sin 2\pi\nu t = s_0 \sin \omega t
 \begin{column}{3cm}
 
 \begin{center}
-\includegraphics[width=0.5\textwidth]{/home/melanie/Work/pictures/physics/kind_schaukel.png}
+\includegraphics[width=0.5\textwidth]{kind_schaukel.png}
 \end{center}
 
 \end{column}
@@ -301,7 +323,7 @@ Was passiert?
 \begin{column}{3cm}
 
 \begin{center}
-\includegraphics[width=0.5\textwidth]{/home/melanie/Work/pictures/physics/kind_schaukel.png}
+\includegraphics[width=0.5\textwidth]{kind_schaukel.png}
 \end{center}
 
 \end{column}
@@ -334,7 +356,7 @@ Systeme von oszillierenden Neuronen, die einander beeinflussen und dadurch mit g
 \begin{column}{3cm}
 
 \begin{center}
-\includegraphics[width=0.5\textwidth]{/home/melanie/Work/pictures/physics/kind_schaukel.png}
+\includegraphics[width=0.5\textwidth]{kind_schaukel.png}
 \end{center}
 
 \end{column}
@@ -350,7 +372,7 @@ Die Schwingung wird verstärkt (Resonanz). \\[0.5 cm]
 Im schlimmsten Fall: Resonanzkatastrophe!
 
 \begin{center}
-\includegraphics[width=0.8\textwidth]{/home/melanie/Work/pictures/physics/tacoma_bridge.jpg}
+\includegraphics[width=0.8\textwidth]{tacoma_bridge.jpg}
 \end{center}
 
 \end{column}
@@ -401,7 +423,7 @@ p-Wellen bei Erdbeben (in der Erdkruste)     & \SI{5000}{\meter\per\second} \\
 \pause
 
 Ausbreitungsgeschwindigkeit ist (pro Welle und Medium) konstant \\
-\(\rightarrow\)  Je größer die Wellenlänge desto kleiner die Frequenz \\
+\(\rightarrow\)  Je größer die Wellenlänge, desto kleiner die Frequenz \\
 
 \end{frame}
 
@@ -672,7 +694,7 @@ Spielen genau diese Schallwellen aus einem kleinen Mikrofon.
 \item
 Jede komplexe Wellenform kann im Prinzip als Überlagerung von Sinuswellen verschiedener Frequenzen dargestellt werden
 \item
-Manchmal interessiert uns, welche Frequenzen wieviel zur Wellenform beitragen
+Manchmal interessiert uns, welche Frequenzen wie viel zur Wellenform beitragen
 \item
 Dafür möchten wir eine Darstellung ``im Frequenzraum'' (statt Zeit stellen wir Frequenz auf der x-Achse dar)
 \item
@@ -1079,6 +1101,61 @@ Schallwellen werden von Hammer, Amboss und Steigbügel verstärkt. In der Hörsc
 \end{frame}
 
 
+\begin{frame}{IMPP Frage}
+
+Bei der Ultraschall-Diagnostik im Impuls-Echo-Verfahren (Sonographie) fungiert der Schallkopf als Schallsender und -empfänger. An einer Struktur mit der Entfernung \(d\) vom Schallkopf wird der Schall reflektiert. \(\Delta t\) ist die Zeitdifferenz zwischen der Aussendung des Impulses und dem Empfang des an der Struktur des Körpers reflektierten Signals. Die (als konstant gesehene) Schallgeschwindigkeit ist hierbei \(v\). Dann gilt:\\[0.2 cm]
+
+\begin{description}
+\item[A.]
+\(d=v \frac{\Delta t}{2} \) \\[0.3 cm]
+\item[B.]
+\(d= \frac{v}{\Delta t}\) \\[0.3 cm]
+\item[C.]
+\(d= 2\frac{v}{\Delta t}\) \\[0.3 cm]
+\item[D.]
+\(d= v\Delta t\) \\[0.3 cm]
+\item[E.]
+\(d= 2v\Delta t\)
+\end{description}
+
+
+\end{frame}
+
+
+%% Spoiler Alert
+\begin{frame}{IMPP Frage}
+
+\[
+\text{Geschwindikgeit}=\frac{\text{Weg}}{\text{Zeit}}
+\]
+
+
+\pause
+
+\[
+\text{Weg} = \text{Geschwindikgeit} \times \text{Zeit}
+\]
+
+\pause
+
+\vfill 
+
+\begin{tabular}{lll}
+Weg:     & \(d\)\\
+Geschwindigkeit:     & \(v\) \\
+Zeit:                & \(\frac{\Delta t}{2}\)  \\ [0.5 cm]
+\end{tabular}
+
+ (denn \(\Delta t\) ist ja die Zeit für den Hin - und Rückweg!)
+ 
+ \vfill
+ 
+ \pause
+ 
+ \[d=v \frac{\Delta t}{2} \]
+
+\end{frame}
+%% End Spoiler Alert
 
 
 
@@ -1280,7 +1357,7 @@ Schwingungen und Wellen im Alltag sehen
 
 \begin{column}{6cm}
 \begin{center}
-\includegraphics[width=\textwidth]{/home/melanie/Work/pictures/metaphore/smilie_balloons.jpg}
+\includegraphics[width=\textwidth]{smilie_balloons.jpg}
 \end{center}
 
 \end{column}
@@ -1344,6 +1421,9 @@ Evelyn Glennie. Photo, may 30, 2004- photo: nomo/michael hoefner \url{http://www
 
 \item
 Fortbewegung des Regenwurms. lilaandben. Der Regenwurm, 2022. \url{https://lilaundben.mediastart.de/de/gartenzwerg/der-regenwurm}
+
+\item
+Gedämpfte Oszillation. CC BY-SA 3.0, \url{https://commons.wikimedia.org/w/index.php?curid=26369880}
 
 \item
 Gewitter. Photo by \href{https://unsplash.com/@alienaperture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText}{Michael D} on \href{https://unsplash.com/s/photos/thunderstorm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText}{Unsplash}
